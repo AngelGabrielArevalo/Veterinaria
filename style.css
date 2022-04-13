@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 3.75rem;
+}
+
+#imglogo {
+    width: 2.375rem;
+    height: 2.375rem;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e3f2fd;
+    height: 2.8125rem;
+    left: 0;
+    top: 0;
+    
+}
+
+body{
+    top: 50px;
+}
+
+.logoynombre, nav, .navli, .navul, .navli_a, .btn_menu {
+    height: 100%;
+}
+
+.logoynombre{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.25rem;
+}
+
+.nombredepagina {
+    width: max-content;
+}
+
+.navul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navli_a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: auto .625rem;
+}
+
+.img {
+    margin-right: .8125rem;
+}
+
+.navlogos {
+    margin-right: .4375rem;
+}
+
+.btn_menu {
+    display: flex;
+    align-items: center;
+    margin: auto 1.25rem;
+    display: none;
+}
+
+.btn {
+  font-size: 1.875rem;
+}
+
+.logoynombre:hover, .navli_a:hover, .btn_menu:hover, .navli_a.active {
+    background-color: #cddbe6;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: .1875rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 576px) {
+    body {
+        background-color: red;
+    }
+
+    .btn_menu {
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        background-color: rgba(44, 62, 80, 0.9);
+
+        width: 100%;
+        left: 0;
+        top: 2.8125rem;
+        height: calc(100% - 2.8125rem );
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .navul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navli{
+        height: 50px;
+        width: 100%;
+    }
+    
+    .navli_a {
+        height: 100%;
+        align-items: center;
+        text-decoration: none;
+        color: white;    
+    }
+
+    .navli_a:hover {
+        color: black;
+    }
+
+    .nav-menu_visible{
+        left: 0%;
+    }
+}
+
+
+
+
+
